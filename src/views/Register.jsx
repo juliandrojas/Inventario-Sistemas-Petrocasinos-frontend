@@ -44,6 +44,13 @@ export default function Register() {
   return (
     <>
       <div className="d-flex flex-column justify-content-center align-items-center min-vh-100 bg-light">
+        <img
+          src="/vite.svg"
+          alt="Logo"
+          width={80}
+          height={80}
+          className="mb-4"
+        />
         <h1 className="text-center mb-4">Usuario, regístrate aquí</h1>
         <div
           className="card shadow"
