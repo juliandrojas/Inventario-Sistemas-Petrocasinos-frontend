@@ -64,7 +64,7 @@ export default function Login() {
           </div>
 
           <div className="d-grid mb-3">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary disabled">
               Entrar
             </button>
           </div>

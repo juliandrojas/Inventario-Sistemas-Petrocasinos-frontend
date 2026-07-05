@@ -97,7 +97,7 @@ export default function Register() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <div className="d-grid mb-3 mt-3">
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn btn-primary disabled">
                 Register
               </button>
             </div>
