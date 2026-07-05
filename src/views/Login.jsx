@@ -30,7 +30,9 @@ export default function Login() {
   };
   return (
     <div className="d-flex flex-column justify-content-center align-items-center min-vh-100 bg-light">
-      <h1 className="text-center mb-4">Inventario de Sistemas Petrocasinos</h1>
+      <h1 className="text-center mb-4">
+        SIGEC — Sistema de Gestión de Equipos de Cómputo
+      </h1>
       <div className="card shadow" style={{ width: "100%", maxWidth: "400px" }}>
         <form className="card-body p-4" onSubmit={handleSubmit}>
           <div className="mb-3">
