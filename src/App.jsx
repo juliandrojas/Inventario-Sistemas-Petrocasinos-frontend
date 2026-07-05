@@ -8,6 +8,8 @@ function App() {
       <Routes>
         <Route path="/login" element={<Navigate to="/login" replace />} />
         <Route path="/register" element={<Register />} />
+        {/* Route Comodin */}
+        <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </>
   );
