@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import viteLogo from "../assets/vite.svg";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -45,11 +46,11 @@ export default function Register() {
     <>
       <div className="d-flex flex-column justify-content-center align-items-center min-vh-100 bg-light">
         <img
-          src="/vite.svg"
+          src={viteLogo}
           alt="Logo"
-          width={80}
-          height={80}
-          className="mb-4"
+          width="80"
+          height="80"
+          className="mb-3"
         />
         <h1 className="text-center mb-4">Usuario, regístrate aquí</h1>
         <div

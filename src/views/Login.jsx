@@ -1,23 +1,21 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import viteLogo from "../assets/vite.svg";
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [pin, setPin] = useState("");
 
   const handlePinChange = (e) => {
-    // Eliminamos todo lo que no sea dígito
     const onlyNumbers = e.target.value.replace(/\D/g, "");
     setPin(onlyNumbers);
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Enviamos los datos al servidor de prueba
     const response = await fetch("http://localhost:5000/test/login", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password: pin }),
     });
     const data = await response.json();
@@ -28,9 +26,10 @@ export default function Login() {
       alert("Login failed: " + data.message);
     }
   };
+
   return (
     <div className="d-flex flex-column justify-content-center align-items-center min-vh-100 bg-light">
-      <img src="/vite.svg" alt="Logo" width={80} height={80} className="mb-4" />
+      <img src={viteLogo} alt="Logo" width="80" height="80" className="mb-3" />
       <h1 className="text-center mb-4">
         SICAE — Sistema de Control de Asignación de Equipos
       </h1>
